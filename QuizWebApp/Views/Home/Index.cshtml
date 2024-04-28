@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .card {
+        box-shadow: 4px 4px 5px 0 rgba(194, 128, 234, 0.60);
+        background-color: rgba(128, 15, 196, 0.35);
+        transition: 0.3s;
+        border-radius: 5px; /* 5px rounded corners */
+        padding: 2px 1px 20px 15px;
+    }
+</style>
+
+<div class="jumbotron" style="margin-top:45px">
+    <h1>Competitive Examinations</h1>
+    <p class="lead">
+    </p>    
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h2>Lets started Quiz</h2>
+                @Html.ActionLink("Start Quiz >>", "Index", "Quiz", null, new { @class = "btn btn-success" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h2>Candidate Result</h2>
+                @Html.ActionLink("Check Result >>", "CandidateResult", "Result", null, new { @class = "btn btn-success" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h2>Employee Login</h2>
+                @Html.ActionLink("Login >>", "Index", "Account", null, new { @class = "btn btn-success" })
+            </div>
+        </div>
+    </div>
+</div>
